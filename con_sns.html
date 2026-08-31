@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS 콘텐츠 | 김지우</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="top-nav">
+    <a href="index.html">JEEWOO&nbsp;&nbsp;|&nbsp;&nbsp;WORK SAMPLE</a>
+</nav>
+
+
+<header class="detail-header">
+
+    <p class="detail-label">CONTENTS</p>
+
+    <h1>SNS 콘텐츠</h1>
+
+    <p class="detail-meta">
+        인스타그램 피드 콘텐츠 기획 · 제작
+    </p>
+
+</header>
+
+
+<main class="sns-slider">
+
+    <button class="slider-btn prev" onclick="prevSlide()">←</button>
+
+    <div class="slider-window">
+
+        <div class="slider-track">
+
+            <img src="images/contents/SNS/01.jpg" alt="SNS 콘텐츠 01">
+            <img src="images/contents/SNS/02.jpg" alt="SNS 콘텐츠 02">
+            <img src="images/contents/SNS/03.jpg" alt="SNS 콘텐츠 03">
+            <img src="images/contents/SNS/04.jpg" alt="SNS 콘텐츠 04">
+
+        </div>
+
+    </div>
+
+    <button class="slider-btn next" onclick="nextSlide()">→</button>
+
+</main>
+
+
+<div class="slider-counter">
+    <span id="current-slide">01</span>
+    <span>/ 04</span>
+</div>
+
+
+<script>
+
+let currentSlide = 0;
+
+const track = document.querySelector('.slider-track');
+const totalSlides = 4;
+const currentNumber = document.getElementById('current-slide');
+
+function updateSlide() {
+
+    track.style.transform =
+        `translateX(-${currentSlide * 100}%)`;
+
+    currentNumber.textContent =
+        String(currentSlide + 1).padStart(2, '0');
+}
+
+function nextSlide() {
+
+    currentSlide++;
+
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    updateSlide();
+}
+
+function prevSlide() {
+
+    currentSlide--;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+
+    updateSlide();
+}
+
+</script>
+
+
+</body>
+</html>
