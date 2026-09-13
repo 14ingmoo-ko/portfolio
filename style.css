@@ -1,8 +1,292 @@
-/* 촬영 사진 - 준비중 */
+/* =========================
+   E-COMMERCE PAGE
+   ========================= */
+
+.ecommerce-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px 100px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   SECTION
+   ========================= */
+
+.ecommerce-section {
+    max-width: 1200px;
+    margin: 0 auto 140px;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.ecommerce-section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SECTION HEADER
+   ========================= */
+
+.ecommerce-section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+
+    margin-bottom: 55px;
+}
+
+.ecommerce-section-header span {
+    font-size: 24px;
+    color: #888;
+}
+
+.ecommerce-section-header h2 {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+
+/* =========================
+   01 DETAIL PAGE
+   ========================= */
+
+.ecommerce-section .detail-products {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card h2 {
+    margin: 0 0 12px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-card p {
+    margin: 0 0 20px;
+
+    font-size: 15px;
+    color: #666;
+}
+
+.product-thumbnail {
+    display: block;
+    width: 100%;
+}
+
+.product-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail-placeholder {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+    color: #999;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .ecommerce-page {
+        padding: 0 20px 80px;
+    }
+
+    .ecommerce-section {
+        margin-bottom: 90px;
+        padding: 0 20px;
+    }
+
+    /* 01 DETAIL PAGE */
+
+    .ecommerce-section .detail-products {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================
+   PORTFOLIO PAGE
+   ========================= */
+.portfolio-top-space {
+    width: 100%;
+    height: 90px;
+    background: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-download {
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.portfolio-download a {
+    display: inline-block;
+
+    color: #111 !important;
+    font-size: 16px !important;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    background: #fff;
+    padding: 10px 20px;
+
+    border: 1px solid #111;
+}
+
+.portfolio-download a:hover {
+    color: #111;
+}
+
+
+.portfolio-background {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 0 0 40px;
+}
+
+.portfolio-pages {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 포트폴리오 한 장 */
+
+.portfolio-page {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.portfolio-page:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-page img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .portfolio-download {
+        padding: 0 20px;
+    }
+
+}
+/* =========================
+   PORTFOLIO TOP / DOWNLOAD
+   ========================= */
+
+.portfolio-top-space {
+    width: 100%;
+    height: 130px;
+    background: #f5f5f5;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.portfolio-download {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px 16px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.portfolio-download a {
+    display: inline-block;
+
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    transition: color 0.2s ease;
+}
+
+.portfolio-download a:hover {
+    color: #111;
+}
+
+
+@media (max-width: 768px) {
+
+    .portfolio-download {
+        padding: 0 20px 16px;
+    }
+
+}
+/* =========================
+촬영 사진 - 준비중
+   ========================= */
 .coming-soon strong {
     color: #b5b5b5;
 }
+/* =========================
+   COMING SOON PAGE
+   ========================= */
 
+.coming-soon-page {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon-message {
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: -0.02em;
+}
 
 /* =========================
    AD CREATIVE PAGE
@@ -73,7 +357,7 @@
 /* WIDE */
 
 .ad-wide img {
-    display: block;
+    display: block;ㄴ
     width: 100%;
     height: auto;
 }
@@ -104,26 +388,114 @@
 }
 
 /* =========================
+CRM DIRECT LINK 
+ ========================= */
+.crm-direct-link {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 14px;
+
+    color: #111;
+    text-decoration: none;
+}
+
+.crm-direct-link span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+}
+
+.crm-direct-link:hover {
+    opacity: 0.6;
+}
+/* =========================
+   CRM EMAIL BUTTON
+   ========================= */
+
+.work-button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.work-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 80px;
+    padding: 0 24px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ddd;
+
+    color: #111;
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.work-button span {
+    font-size: 12px;
+    color: #888;
+}
+
+.work-button:hover {
+    background: #f5f5f5;
+}
+
+
+/* KAKAO DIRECT LINK */
+
+.crm-direct-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #111;
+    text-decoration: none;
+}
+
+.crm-direct-link span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+}
+
+.crm-direct-link:hover {
+    opacity: 0.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .work-button-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+}
+/* =========================
    CRM KAKAO MESSAGE
    ========================= */
 
 .crm-kakao-pages {
     width: 100%;
     max-width: 1000px;
-    margin: 80px auto 0;
+    margin: 0px auto 0;
 }
 
 .crm-kakao-pages img {
     display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     height: auto;
     margin: 0 auto 60px;
 }
 
-.crm-kakao-pages img:last-child {
-    margin-bottom: 0;
-}
 
 /* =========================
    PRODUCT VIDEO
@@ -217,6 +589,55 @@
 
     font-size: 13px;
     letter-spacing: 0.05em;
+}
+/* =========================
+   CONTENTS INDEX
+   ========================= */
+
+.contents-index .work-list a {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    padding: 20px 0;
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.contents-index .work-list a span {
+    width: 32px;
+    flex-shrink: 0;
+    font-size: 15px;
+    color: #888;
+    letter-spacing: 0.04em;
+}
+
+.contents-index .work-list a strong {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+/* 마우스 올렸을 때 */
+.contents-index .work-list a:hover {
+    background: #fafafa;
+}
+
+/* 준비중 항목 */
+.contents-index .work-list a.coming-soon {
+    color: #aaa;
+}
+
+.contents-index .work-list a.coming-soon span,
+.contents-index .work-list a.coming-soon strong {
+    color: #aaa;
+}
+.contents-index .work-list {
+    margin-top: 0;
+}
+
+.contents-index .work-list a {
+    margin-bottom: 0;
 }
 
 /* =========================
@@ -382,17 +803,20 @@
     }
 
 }
-
 /* =========================
    INDEX PAGE
    ========================= */
 
-/* PROFILE CARD */
+
+/* =========================
+   PROFILE CARD
+   ========================= */
 
 .profile-card {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 60px 80px;
+    box-sizing: border-box;
 }
 
 .profile-title {
@@ -416,7 +840,6 @@
     letter-spacing: 0.04em;
 }
 
-
 .profile-intro {
     margin: 28px 0 40px;
     font-size: 18px;
@@ -436,73 +859,201 @@
 }
 
 
-/* WORK INDEX */
+/* =========================
+   WORK INDEX
+   ========================= */
 
 .work-index {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 60px 80px;
+    box-sizing: border-box;
 }
 
 .work-index h2 {
-    margin: 0 0 28px;
+    margin: 0 0 40px;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: -0.03em;
 }
+
+
+/* =========================
+   MAIN CATEGORY
+   ========================= */
 
 .work-list {
     display: flex;
     flex-direction: column;
 }
 
-.work-list a {
+.work-list a,
+.work-main-title {
     display: flex;
     align-items: baseline;
     gap: 24px;
 
-    padding: 11px 0;
+    padding: 20px 0;
 
     color: #111;
     text-decoration: none;
 
     border-bottom: 1px solid #e8e8e8;
 }
-
-.work-list a:first-child {
-    border-top: 1px solid #e8e8e8;
+/* 01 PORTFOLIO */
+.portfolio-list a {
+    transition: background 0.2s ease;
 }
 
-.work-list span {
-    width: 24px;
+.portfolio-list a:hover {
+    background: #fafafa;
+}
 
-    font-size: 12px;
+.portfolio-list a:hover .work-view {
+    transform: translateX(4px);
+}
+
+.portfolio-list .work-view {
+    transition: transform 0.2s ease;
+}
+
+/* =========================
+   01 PORTFOLIO
+   ========================= */
+
+.portfolio-list a:first-child {
+    border-top: none;
+    margin-bottom: 32px;
+}
+
+
+/* WORK SAMPLE TITLE */
+
+.work-main-title {
+    border-top: none;
+}
+
+.work-list > a span,
+.work-main-title > span {
+    width: 32px;
+
+    font-size: 15px;
     color: #888;
     letter-spacing: 0.04em;
 }
 
-.work-list strong {
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
-.work-list a:hover {
-    color: #666;
+.work-list > a strong,
+.work-main-title > strong {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 
-/* FOOTER */
+/* VIEW */
+.work-list a .work-view {
+    width: auto;
 
-footer {
-    padding: 20px 60px 16px;
-    text-align: right;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+
+    letter-spacing: 0;
+    margin-left: 0;
+
+    white-space: nowrap;
+}
+
+.work-list a:hover .work-view {
     color: #888;
 }
 
-footer p {
-    margin: 0;
+
+/* =========================
+   WORK SAMPLE
+   ========================= */
+
+.work-sample-list {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   WORK GRID
+   ========================= */
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 90px;
+}
+
+.work-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    box-sizing: border-box;
+
+    padding: 0 28px;
+
+    color: #111;
+    text-decoration: none;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    transition: background 0.2s ease;
+}
+
+.work-grid a:nth-child(odd) {
+    border-right: 1px solid #e8e8e8;
+}
+
+.work-grid a strong {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.work-grid a span {
+    flex-shrink: 0;
+
+    font-size: 12px;
+    color: #888;
+
+    transition: transform 0.2s ease;
+}
+
+.work-grid a:hover {
+    background: #fafafa;
+}
+
+.work-grid a:hover span {
+    transform: translateX(4px);
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .work-index {
+        padding: 0 20px 60px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 90px;
+    }
+
+    .work-grid a:nth-child(odd) {
+        border-right: none;
+    }
+
 }
 
 
@@ -531,12 +1082,32 @@ footer p {
     text-decoration: none;
 }
 
+/* FOOTER */
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 0 60px 30px;
+
+    text-align: right;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #888;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
 /* TOP NAV와 본문이 겹치지 않도록 */
 
 .top-nav + header {
     margin-top: 70px;
 }
-
 
 /* DETAIL PAGE LINKS */
 
