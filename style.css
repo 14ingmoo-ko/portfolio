@@ -589,55 +589,55 @@ CRM DIRECT LINK
 
     font-size: 13px;
     letter-spacing: 0.05em;
-}
-/* =========================
+}/* =========================
    CONTENTS INDEX
    ========================= */
 
-.contents-index .work-list a {
+.contents-index .contents-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.contents-index .contents-list a {
     display: flex;
     align-items: baseline;
     gap: 24px;
+
     padding: 20px 0;
+    margin-bottom: 0;
+
     color: #111;
     text-decoration: none;
+
     border-bottom: 1px solid #e8e8e8;
 }
 
-.contents-index .work-list a span {
+.contents-index .contents-list a span {
     width: 32px;
     flex-shrink: 0;
+
     font-size: 15px;
     color: #888;
     letter-spacing: 0.04em;
 }
 
-.contents-index .work-list a strong {
+.contents-index .contents-list a strong {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.01em;
 }
 
 /* 마우스 올렸을 때 */
-.contents-index .work-list a:hover {
+.contents-index .contents-list a:hover {
     background: #fafafa;
 }
 
 /* 준비중 항목 */
-.contents-index .work-list a.coming-soon {
+.contents-index .contents-list a.coming-soon,
+.contents-index .contents-list a.coming-soon span,
+.contents-index .contents-list a.coming-soon strong {
     color: #aaa;
-}
-
-.contents-index .work-list a.coming-soon span,
-.contents-index .work-list a.coming-soon strong {
-    color: #aaa;
-}
-.contents-index .work-list {
-    margin-top: 0;
-}
-
-.contents-index .work-list a {
-    margin-bottom: 0;
 }
 
 /* =========================
