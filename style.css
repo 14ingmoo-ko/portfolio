@@ -1119,3 +1119,68 @@ main > a {
 main > a:hover {
     opacity: 0.6;
 }
+
+
+/* =========================
+   E-COMMERCE WORK OVERVIEW
+   ========================= */
+
+    .work-overview {
+    width: 100%;
+    max-width: 1200px;
+    padding: 24px 0;
+    margin: -20px auto 110px;
+    box-sizing: border-box;
+
+    display: flex;
+    gap: 40px;
+
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.overview-item {
+    flex: 1;
+    min-width: 0;
+     padding-left: 0;
+}
+
+.overview-label {
+    display: block;
+    margin-bottom: 12px;
+
+    color: #999;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+.overview-item p {
+    margin: 0;
+
+    color: #222;
+    font-size: 14px;
+    line-height: 1.7;
+    word-break: keep-all;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .work-overview {
+        width: calc(100% - 40px);
+        flex-direction: column;
+        gap: 24px;
+
+        margin: -10px auto 70px;
+        padding: 24px 0;
+    }
+
+    .overview-label {
+        margin-bottom: 6px;
+    }
+
+    .overview-item p {
+        font-size: 13px;
+    }
+}
